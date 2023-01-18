@@ -1,5 +1,5 @@
 import {z} from 'zod'
-
+export type BitcoinResData = z.infer<typeof bitcoinResponse>
 export const bitcoinResponse = z.object({
   Response:z.string(),
   Message: z.string(),
